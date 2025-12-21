@@ -1,1 +1,457 @@
-test
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klein und Frei - Ateliere Creative pentru Copii</title>
+    <meta name="description" content="Ateliere creative bilingve pentru copii în limba română și germană. Klein und Frei - Mic și liber, aici creativitatea nu are limite!">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#acasa" class="logo">
+                    <img src="logo.jpeg" alt="Klein und Frei" class="logo-img">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#acasa" class="nav-link">Acasă</a>
+                    <a href="#despre" class="nav-link">Despre noi</a>
+                    <a href="#ateliere" class="nav-link">Ateliere</a>
+                    <a href="#cumpara" class="nav-link">Cumpără</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#acasa" class="nav-link-mobile">Acasă</a>
+                <a href="#despre" class="nav-link-mobile">Despre noi</a>
+                <a href="#ateliere" class="nav-link-mobile">Ateliere</a>
+                <a href="#cumpara" class="nav-link-mobile">Cumpără</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="acasa" class="hero">
+            <!-- Background with logo -->
+            <div class="hero-bg"></div>
+            
+
+            <div class="container hero-container">
+                <div class="hero-logo">
+                    <img src="logo.jpeg" alt="Klein und Frei" class="hero-logo-img">
+                </div>
+
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Bine ați venit la 
+                        <span class="hero-brand">
+                            <span class="text-leaf">Klein</span>
+                            <span class="text-sand"> und </span>
+                            <span class="text-coral">Frei</span>
+                        </span>
+                    </h1>
+                    <p class="hero-description">
+                        Ateliere creative bilingve pentru copii în limba română și germană.
+                        <br>
+                        <span class="hero-tagline">Mic și liber</span> – aici creativitatea nu are limite!
+                    </p>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#ateliere" class="btn btn-primary">Descoperă atelierele</a>
+                    <a href="#contact" class="btn btn-secondary">Contactează-ne</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="despre" class="about">
+            <div class="section-blob blob-1"></div>
+            <div class="section-blob blob-2"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-leaf">Despre</span>
+                        <span class="text-coral"> noi</span>
+                    </h2>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            <span class="text-primary font-bold">Klein und Frei</span> (tradus: Mic și Liber) 
+                            este un proiect de suflet creat de două persoane pasionate de educație și artă pentru copii.
+                        </p>
+                        <p class="about-paragraph">
+                            Organizăm ateliere creative pentru copii în limba română și germană, 
+                            unde cei mici pot explora, crea și învăța într-un mediu sigur și vesel.
+                        </p>
+                        <p class="about-paragraph">
+                            Credem că fiecare copil este unic și merită să fie încurajat să își exprime 
+                            creativitatea în mod liber. De aceea, atelierele noastre sunt concepute să inspire 
+                            și să ofere momente de bucurie autentică.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stats-card">
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number text-primary">2</div>
+                                    <div class="stat-label">Fondatoare</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number text-secondary">2</div>
+                                    <div class="stat-label">Limbi</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number text-accent">∞</div>
+                                    <div class="stat-label">Creativitate</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number text-leaf">♥</div>
+                                    <div class="stat-label">Pasiune</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card border-coral">
+                        <div class="feature-icon bg-coral">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Cu dragoste pentru copii</h3>
+                        <p class="feature-description">Fiecare atelier este gândit cu grijă pentru a oferi o experiență memorabilă și educativă.</p>
+                    </div>
+
+                    <div class="feature-card border-sunshine">
+                        <div class="feature-icon bg-sunshine">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Învățare prin joacă</h3>
+                        <p class="feature-description">Combinăm creativitatea cu educația într-un mod natural și distractiv pentru cei mici.</p>
+                    </div>
+
+                    <div class="feature-card border-mint">
+                        <div class="feature-icon bg-mint">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 3a6.364 6.364 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                                <path d="M20 3v4"/>
+                                <path d="M22 5h-4"/>
+                                <path d="M4 17v2a2 2 0 0 0 2 2h2"/>
+                                <path d="M20 17v2a2 2 0 0 1-2 2h-2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Bilingv RO-DE</h3>
+                        <p class="feature-description">Atelierele noastre sunt susținute în română și germană, pentru o experiență culturală completă.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshops Section -->
+        <section id="ateliere" class="workshops">
+            <div class="section-blob blob-3"></div>
+            <div class="section-blob blob-4"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-leaf">Atelierele</span>
+                        <span class="text-coral"> noastre</span>
+                    </h2>
+                    <p class="section-description">
+                        Fiecare atelier este o aventură nouă! Descoperă ce activități pregătim pentru cei mici.
+                    </p>
+                </div>
+
+                <div class="workshops-grid">
+                    <div class="workshop-card border-coral">
+                        <div class="workshop-content">
+                            <div class="workshop-icon bg-coral">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9.06 11.9c.18-.98.65-1.87 1.38-2.54A5.5 5.5 0 0 1 16 7c.93 0 1.8.21 2.58.59A3 3 0 0 0 15 5.5c-1.4 0-2.6.8-3.2 2-.6-1.2-1.8-2-3.2-2a3 3 0 0 0-3.58 2.09A5.5 5.5 0 0 1 9.06 11.9Z"/>
+                                    <circle cx="16" cy="13.5" r="5.5"/>
+                                    <path d="M12 17h.01"/>
+                                </svg>
+                            </div>
+                            <div class="workshop-text">
+                                <h3 class="workshop-title">Arte plastice</h3>
+                                <p class="workshop-description">Pictură, desen, colaje și alte tehnici artistice pentru a stimula imaginația copiilor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card border-sunshine">
+                        <div class="workshop-content">
+                            <div class="workshop-icon bg-sunshine">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18V5l12-2v13"/>
+                                    <circle cx="6" cy="18" r="3"/>
+                                    <circle cx="18" cy="16" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="workshop-text">
+                                <h3 class="workshop-title">Muzică și mișcare</h3>
+                                <p class="workshop-description">Cântece, dans și jocuri muzicale în ambele limbi pentru dezvoltare armonioasă.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card border-mint">
+                        <div class="workshop-content">
+                            <div class="workshop-icon bg-mint">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                                </svg>
+                            </div>
+                            <div class="workshop-text">
+                                <h3 class="workshop-title">Povești și teatru</h3>
+                                <p class="workshop-description">Lecturi interactive, povești creative și mici spectacole de teatru pentru copii.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card border-leaf">
+                        <div class="workshop-content">
+                            <div class="workshop-icon bg-leaf">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                                    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                                </svg>
+                            </div>
+                            <div class="workshop-text">
+                                <h3 class="workshop-title">Natură și experiment</h3>
+                                <p class="workshop-description">Explorăm natura prin experimente simple și activități în aer liber.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workshops-info">
+                    <div class="info-card">
+                        <p class="info-text">
+                            🎨 Toate atelierele sunt adaptate pentru copii cu vârste între <span class="font-bold text-primary">3-10 ani</span>
+                        </p>
+                        <p class="info-subtext">
+                            Grupele sunt mici pentru o atenție personalizată fiecărui copil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="cumpara" class="shop">
+            <div class="section-blob blob-5"></div>
+            <div class="section-blob blob-6"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-leaf">Cum</span><span class="text-coral">pără</span>
+                    </h2>
+                    <p class="section-description">
+                        Susține-ne achiziționând produse cu logo-ul nostru! Toate produsele sunt din materiale naturale.
+                    </p>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card border-mint">
+                        <div class="product-icon bg-mint">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                <path d="M3 6h18"/>
+                                <path d="M16 10a4 4 0 0 1-8 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">Plasă de bumbac</h3>
+                        <p class="product-description">Plasă de cumpărături din bumbac organic cu logo-ul Klein und Frei, perfectă pentru activitățile zilnice.</p>
+                        <div class="product-price">25 RON</div>
+                        <a href="#contact" class="product-btn">Comandă</a>
+                    </div>
+
+                    <div class="product-card border-coral">
+                        <div class="product-icon bg-coral">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                <path d="M3 6h18"/>
+                                <path d="M16 10a4 4 0 0 1-8 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">Tricou pentru copii</h3>
+                        <p class="product-description">Tricou alb din bumbac 100% pentru copii, cu logo-ul nostru vesel imprimat.</p>
+                        <div class="product-price">45 RON</div>
+                        <a href="#contact" class="product-btn">Comandă</a>
+                    </div>
+
+                    <div class="product-card border-sunshine">
+                        <div class="product-icon bg-sunshine">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                <path d="M3 6h18"/>
+                                <path d="M16 10a4 4 0 0 1-8 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">Cană ceramică</h3>
+                        <p class="product-description">Cană ceramică cu design-ul Klein und Frei, ideală pentru băuturi calde.</p>
+                        <div class="product-price">35 RON</div>
+                        <a href="#contact" class="product-btn">Comandă</a>
+                    </div>
+                </div>
+
+                <div class="shop-note">
+                    <p>Pentru comenzi, contactează-ne prin email sau telefon. 📦</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-blob blob-7"></div>
+            <div class="section-blob blob-8"></div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-leaf">Hai să ne</span>
+                        <span class="text-coral"> cunoaștem!</span>
+                    </h2>
+                    <p class="section-description">
+                        Ai întrebări sau vrei să înscrii copilul la un atelier? Scrie-ne cu încredere!
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon bg-coral">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Email</h3>
+                                <a href="mailto:contact@kleinundfrei.ro" class="contact-link">contact@kleinundfrei.ro</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon bg-mint">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Telefon</h3>
+                                <a href="tel:+40700000000" class="contact-link">+40 700 000 000</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon bg-sunshine">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Locație</h3>
+                                <p class="contact-text">România / Germania</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <div class="social-card">
+                            <h3 class="social-title">Urmărește-ne!</h3>
+                            <p class="social-description">
+                                Pentru noutăți, poze de la ateliere și inspirație creativă.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="social-link instagram" aria-label="Instagram">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link facebook" aria-label="Facebook">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cta-card">
+                            <h3 class="cta-title">📅 Programează-te!</h3>
+                            <p class="cta-description">
+                                Trimite-ne un mesaj pentru a afla programul atelierelor și disponibilitatea.
+                            </p>
+                            <a href="mailto:contact@kleinundfrei.ro" class="cta-btn">Scrie-ne acum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.jpeg" alt="Klein und Frei" class="footer-logo">
+                    <div class="footer-brand-text">
+                        <h3 class="footer-brand-title">Klein und Frei</h3>
+                        <p class="footer-brand-subtitle">Mic și Liber</p>
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="#acasa" class="footer-link">Acasă</a>
+                    <a href="#despre" class="footer-link">Despre noi</a>
+                    <a href="#ateliere" class="footer-link">Ateliere</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="currentYear">2024</span> Klein und Frei. Toate drepturile rezervate.
+                </p>
+                <p class="footer-tagline">
+                    Făcut cu ❤️ pentru copiii creativi
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
