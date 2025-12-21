@@ -25,7 +25,7 @@
   --mint: hsl(160, 45%, 55%);
   --sunshine: hsl(40, 90%, 62%);
   --sky: hsl(200, 70%, 78%);
-  --leaf: hsl(86, 45%, 55%);
+  --leaf: hsl(69.68deg 38.91% 53.14%);
   --heart: hsl(0, 52%, 33%);
   --sand: hsl(35, 40%, 88%);
   --peach: hsl(25, 80%, 85%);
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   border-radius: 50%;
   opacity: 0.3;
-  animation: float 3s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
 }
 
 .shape-1 {
@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 35%;
   right: 20%;
   animation-delay: -18s;
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .shape-9 {
@@ -368,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-tagline {
-  color: var(--primary);
+  color: var(--foreground);
   font-weight: 600;
 }
 
