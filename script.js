@@ -54,12 +54,47 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-in');
+                
+                // Trigger counter animation for stat numbers
+                if (entry.target.classList.contains('stats-card')) {
+                    animateStats(entry.target);
+                }
             }
         });
     }, observerOptions);
 
+    // Animate stat numbers with counting effect
+    function animateStats(container) {
+        const statNumbers = container.querySelectorAll('.stat-number');
+        statNumbers.forEach((stat, index) => {
+            setTimeout(() => {
+                stat.classList.add('counting');
+                const originalValue = stat.textContent;
+                
+                // Only animate numeric values
+                if (!isNaN(parseInt(originalValue))) {
+                    const finalValue = parseInt(originalValue);
+                    let currentValue = 0;
+                    const increment = Math.ceil(finalValue / 20);
+                    const duration = 800;
+                    const stepTime = duration / (finalValue / increment);
+                    
+                    const counter = setInterval(() => {
+                        currentValue += increment;
+                        if (currentValue >= finalValue) {
+                            stat.textContent = finalValue;
+                            clearInterval(counter);
+                        } else {
+                            stat.textContent = currentValue;
+                        }
+                    }, stepTime);
+                }
+            }, index * 150);
+        });
+    }
+
     // Observe elements for scroll animations
-    const animatedElements = document.querySelectorAll('.feature-card, .workshop-card, .product-card, .contact-card, .stats-card');
+    const animatedElements = document.querySelectorAll('.feature-card, .workshop-card, .product-card, .contact-card, .stats-card, .social-card, .cta-card, .review-card');
     animatedElements.forEach(el => {
         el.classList.add('animate-ready');
         observer.observe(el);
