@@ -41,6 +41,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Ensure footer menu links scroll to section smoothly and always trigger scroll
+    document.querySelectorAll('.footer-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId && targetId.startsWith('#')) {
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Optionally, update the URL hash without jumping
+                    history.replaceState(null, '', targetId);
+                }
+            }
+        });
+    });
+
     // Update current year in footer
     const currentYearElement = document.getElementById('currentYear');
     if (currentYearElement) {
