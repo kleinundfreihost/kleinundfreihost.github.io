@@ -1,5 +1,6 @@
 // Klein und Frei - Essential JavaScript for responsiveness
 document.addEventListener('DOMContentLoaded', function () {
+
     // Mobile Navigation Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNav = document.getElementById('mobileNav');
@@ -18,44 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const id = this.getAttribute('href');
-            if (id === '#') return;
-
-            e.preventDefault();
-            const target = document.querySelector(id);
-            if (!target) return;
-
-            const headerOffset = 80;
-            const elementPosition = target.getBoundingClientRect().top;
-            const offsetPosition =
-                elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Ensure footer menu links scroll to section smoothly and always trigger scroll
-    document.querySelectorAll('.footer-link').forEach(link => {
-        link.addEventListener('click', function (e) {
-            const targetId = this.getAttribute('href');
-            if (targetId && targetId.startsWith('#')) {
-                const target = document.querySelector(targetId);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    // Optionally, update the URL hash without jumping
-                    history.replaceState(null, '', targetId);
-                }
-            }
-        });
-    });
 
     // Update current year in footer
     const currentYearElement = document.getElementById('currentYear');
@@ -102,4 +65,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     `;
     document.head.appendChild(dynamicStyles);
+
 });
