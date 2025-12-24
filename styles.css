@@ -1215,7 +1215,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-btn.instagram {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #cc2366 50%, #cc2366 75%, #bc1888 100%);
-  border: 2px solid #dc2743;
+  border: 2px solid #e6683c;	  	  
   color: white;
 }
 
@@ -1223,7 +1223,8 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: #cc2366;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(240, 148, 51, 0.3);
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+  
 }
 
 .social-btn.instagram:hover svg {
